@@ -1,2 +1,9 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: npm install -g @angular/cli
+  - init: echo 'init script' # runs during prebuild
+    command: npm install -g @angular/cli
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 3000
+    onOpen: open-preview
